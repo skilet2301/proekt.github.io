@@ -1,0 +1,1249 @@
+@font-face {
+   font-family: "FranklinGot";
+   src: url("../fonts/framd.eot");
+   src: local("☺"), url("../fonts/framd.woff") format("woff"), url("../fonts/framd.ttf") format("truetype"),
+      url("../fonts/framd.svg") format("svg");
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: "Calibri";
+   src: url("../fonts/calibri.eot");
+   src: local("☺"), url("../fonts/calibri.woff") format("woff"), url("../fonts/calibri.ttf") format("truetype"),
+      url("../fonts/calibri.svg") format("svg");
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: "Bahnschrift";
+   src: url("../fonts/Bahnschrift.eot");
+   src: local("☺"), url("../fonts/Bahnschrift.woff") format("woff"), url("../fonts/Bahnschrift.ttf") format("truetype"),
+      url("../fonts/Bahnschrift.svg") format("svg");
+   font-weight: normal;
+   font-style: normal;
+}
+
+/*для производительности */
+@font-face {
+   font-family: "FontName";
+   src: local("FontName"), url("FontName.woff") format("woff");
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+body {
+   overflow-x: hidden;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 600px) {
+   body,
+   html {
+      overflow-x: hidden;
+   }
+}
+
+nav {
+   width: 100%;
+   height: 60px;
+   background: #344051;
+   position: fixed;
+   z-index: 16;
+}
+
+.logo {
+   color: white;
+   font-size: 25px;
+   line-height: 60px;
+   float: left;
+   -webkit-animation: comming 2s ease;
+   -o-animation: comming 2s ease;
+   -ms-animation: comming 2s ease;
+   -moz-animation: comming 2s ease;
+
+   animation: comming 2s ease;
+   font-family: "FranklinGot";
+}
+
+main {
+   width: 100%;
+   height: 100%;
+}
+
+.menu {
+   float: left;
+}
+
+.menu li {
+   float: left;
+   line-height: 60px;
+   color: white;
+   font-size: 14px;
+   margin-right: 30px;
+   text-transform: uppercase;
+   -webkit-animation: topshift 0.4s forwards ease;
+   -moz-animation: topshift 0.4s forwards ease;
+   -ms-animation: topshift 0.4s forwards ease;
+   -o-animation: topshift 0.4s forwards ease;
+   animation: topshift 0.4s forwards ease;
+   opacity: 0;
+   font-family: "FranklinGot";
+}
+
+.menu li:nth-child(2) {
+   animation-delay: 0.4s;
+   -webkit-animation-delay: 0.4s;
+   -o-animation-delay: 0.4s;
+   -ms-animation-delay: 0.4s;
+   -moz-animation-delay: 0.4s;
+}
+
+.menu li:nth-child(3) {
+   animation-delay: 0.8s;
+   -webkit-animation-delay: 0.8s;
+   -o-animation-delay: 0.8s;
+   -ms-animation-delay: 0.8s;
+   -moz-animation-delay: 0.8s;
+}
+
+.menu li:nth-child(4) {
+   animation-delay: 1.2s;
+   -webkit-animation-delay: 1.2s;
+   -o-animation-delay: 1.2s;
+   -ms-animation-delay: 1.2s;
+   -moz-animation-delay: 1.2s;
+}
+
+.menu li:nth-child(5) {
+   animation-delay: 1.6s;
+   -webkit-animation-delay: 1.6s;
+   -o-animation-delay: 1.6s;
+   -ms-animation-delay: 1.6s;
+   -moz-animation-delay: 1.6s;
+}
+
+.menu li:nth-child(6) {
+   animation-delay: 2s;
+   -webkit-animation-delay: 2s;
+   -o-animation-delay: 2s;
+   -ms-animation-delay: 2s;
+   -moz-animation-delay: 2s;
+}
+
+.menu li a {
+   transition: all 0.1s;
+   color: white;
+   transform: scale(1);
+   -webkit-transform: scale(1);
+   -o-transform: scale(1);
+   -ms-transform: scale(1);
+   -moz-transform: scale(1);
+
+   text-decoration: none;
+}
+
+/*
+.menu li a:visited {
+   color: white;
+}
+*/
+
+.menu li a:hover {
+   color: #e98705;
+}
+
+.menu li a:active {
+   transform: scale(1.1);
+   -webkit-transform: scale(1.1);
+   -o-transform: scale(1.1);
+   -moz-transform: scale(1.1);
+   -ms-transform: scale(1.1);
+
+   display: block;
+}
+
+nav a.active {
+   color: #e98705;
+}
+.main {
+   width: 100%;
+   background: url(../img/Парень.png) 90% 100% / auto 85% no-repeat, url(../img/фон.jpg) center/cover no-repeat;
+   box-shadow: inset 0 -7px 20px -10px rgba(0, 0, 0, 1);
+   height: 100%;
+}
+
+.title__container {
+   float: left;
+   color: #344051;
+   text-align: center;
+   opacity: 1;
+   -webkit-animation: titlemove 1s ease;
+   -o-animation: titlemove 1s ease;
+   animation: titlemove 1s ease;
+   width: 100%;
+   font-family: "FranklinGot";
+}
+
+.title__container h1 {
+   font-family: "FranklinGot";
+   font-size: 72px;
+   font-weight: 600;
+}
+
+@media (min-width: 1600px) and (min-height: 750px) {
+   .title__container h1 {
+      margin-top: 150px;
+   }
+}
+
+.title__container h4 {
+   margin-top: 40px;
+   font-weight: lighter;
+   font-size: 17px;
+   color: #818993;
+   font-family: "FranklinGot";
+}
+
+.title__container input {
+   height: 40px;
+   text-align: center;
+   border: 2px solid #6d7682;
+   background: none;
+   border-radius: 5px;
+   padding: 0px 16px 0px 16px;
+   margin-top: 58px;
+   margin-right: 35px;
+   font-size: 17px;
+   color: #818993;
+   -webkit-transition: All 0.2s ease;
+
+   -moz-transition: All 0.2s ease;
+
+   -o-transition: All 0.2s ease;
+
+   -ms-transition: All 0.2s ease;
+
+   transition: All 0.2s ease;
+
+   transform: scale(1);
+   -webkit-transform: scale(1);
+   -o-transform: scale(1);
+   -moz-transform: scale(1);
+   -ms-transform: scale(1);
+   display: inline-block;
+   position: static;
+   z-index: 0;
+   font-family: "FranklinGot";
+}
+
+.title__container input:hover {
+   background-color: #344051;
+   color: white;
+}
+
+.title__container input:active {
+   transform: scale(1.1);
+   -webkit-transform: scale(1.1);
+   -o-transform: scale(1.1);
+   -moz-transform: scale(1.1);
+   -ms-transform: scale(1.1);
+   display: inline-block;
+}
+
+@keyframes comming {
+   from {
+      opacity: 0;
+   }
+   to {
+      opacity: 1;
+   }
+}
+
+@keyframes topshift {
+   from {
+      opacity: 0;
+      margin-top: -80px;
+   }
+   to {
+      opacity: 1;
+      margin-top: 0px;
+   }
+}
+
+@keyframes titlemove {
+   from {
+      margin-left: -600px;
+   }
+   to {
+      margin-left: 0px;
+   }
+}
+
+.white-btn:visited {
+   color: white;
+}
+
+@media (max-width: 992px) {
+   .title__container,
+   .title__container h4,
+   .title__container input {
+      color: white;
+      position: relative;
+      z-index: 3;
+   }
+   .main {
+      position: relative;
+   }
+   .main::after {
+      content: "";
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      top: 0px;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.4);
+   }
+   .title__container input {
+      border: 2px solid #fff;
+   }
+}
+
+.resume {
+   width: 100%;
+   padding-bottom: 100px;
+   background: url(../img/Фоновый\ слой.jpg) no-repeat;
+}
+
+.obo_mne {
+   text-transform: uppercase;
+   color: #263244;
+   font-size: 26px;
+   font-family: "FranklinGot";
+}
+
+.lorem {
+   font-family: "Calibri";
+}
+
+.resume_container button {
+   color: #6f707e;
+   border: 2px solid #6f707e;
+   width: 140px;
+   border-radius: 5px;
+   padding: 5px 5px 5px 5px;
+   background: none;
+   transform: scale(1);
+   -webkit-transform: scale(1);
+   -o-transform: scale(1);
+   -moz-transform: scale(1);
+   -ms-transform: scale(1);
+   display: inline-block;
+   font-family: "FranklinGot";
+   -webkit-transition: All 0.2s ease;
+   -moz-transition: All 0.2s ease;
+   -o-transition: All 0.2s ease;
+   -ms-transition: All 0.2s ease;
+   transition: All 0.2s ease;
+}
+
+.resume_container button:hover {
+   background-color: #344051;
+   border: 2px solid white;
+}
+
+.resume_container button:active {
+   transform: scale(1.1);
+   -webkit-transform: scale(1.1);
+   -o-transform: scale(1.1);
+   -moz-transform: scale(1.1);
+   -ms-transform: scale(1.1);
+   display: inline-block;
+}
+
+.custom-css3 {
+   padding-right: 7px;
+   font-size: 13px;
+}
+
+.case {
+   width: 100%;
+   padding-bottom: 100px;
+   background: url(../img/картинка\ фона.jpg) no-repeat 40% 50% / auto 100%;
+}
+
+.chto_i_ymeu {
+   text-transform: uppercase;
+   color: #263244;
+   font-size: 26px;
+   font-family: "FranklinGot";
+}
+
+.cherta {
+   margin-bottom: 20px;
+}
+
+.nout {
+   width: 100px;
+   height: 50px;
+}
+
+.gemor {
+   float: left;
+   width: 2000px;
+}
+
+@media (max-width: 1200px) {
+   .razrab {
+      margin-left: 40px;
+   }
+   .ceo {
+      margin-left: 50px;
+   }
+}
+
+.can {
+   color: #cf7600;
+   font-size: 17px;
+   font-weight: 600;
+   font-family: "Bahnschrift";
+}
+
+.znak {
+   margin-left: 50px;
+   font-family: "Calibri";
+}
+
+.ceo {
+   white-space: nowrap;
+   font-family: "Calibri";
+}
+
+.web {
+   font-family: "Calibri";
+   margin-left: 80px;
+}
+
+.raz {
+   margin-left: 120px;
+   font-family: "Calibri";
+}
+
+.ceoo {
+   margin-left: 180px;
+   font-family: "Calibri";
+}
+
+.mark {
+   margin-left: 190px;
+   background: none;
+   font-family: "Calibri";
+}
+
+.phone {
+   font-size: 17px;
+   color: #263244;
+   font-family: "Calibri";
+}
+
+@media (max-width: 361px) and (max-height: 761px) {
+   .phone1 {
+      margin-left: -10px;
+   }
+}
+
+.phone3 {
+   white-space: nowrap;
+}
+
+.fon {
+   background-color: rgba(255, 255, 255, 0.4);
+   border: none;
+}
+
+.cann {
+   width: 100%;
+   padding-bottom: 150px;
+}
+
+.cases {
+   font-size: 26px;
+   text-transform: uppercase;
+   color: #384354;
+   font-weight: 600;
+   font-family: "FranklinGot";
+}
+
+.calibri {
+   font-family: "Calibri";
+}
+
+.client {
+   margin-top: 0px;
+   color: #384354;
+   font-weight: 600;
+   font-size: 25px;
+   letter-spacing: 0.05px;
+   font-family: "FranklinGot";
+}
+
+.proekt {
+   color: #384354;
+   font-weight: 600;
+   font-size: 21px;
+   font-family: "FranklinGot";
+}
+
+@media (min-width: 993px) and (min-height: 800px) {
+   .client {
+      margin-top: -110px;
+   }
+   .proekt {
+      margin-top: -105px;
+   }
+}
+
+@media (max-width: 600px) and (max-height: 1000px) {
+   .proekt {
+      margin-top: -35px;
+   }
+}
+
+.text {
+   font-family: "Calibri";
+   font-size: 16px;
+}
+
+.compania {
+   color: #525a69;
+   font-family: "Calibri";
+}
+
+@media (max-width: 992px) and (max-height: 1000px) {
+   .text {
+      color: #525a69;
+      margin-left: -25px;
+   }
+}
+
+@media (min-width: 993px) and (min-height: 800px) {
+   .compania {
+      margin-top: -75px;
+   }
+   .text {
+      margin-top: -75px;
+   }
+   .website {
+      margin-top: -35px;
+   }
+}
+
+.website {
+   font-size: 25px;
+   color: #384354;
+   text-transform: uppercase;
+   font-family: "FranklinGot";
+}
+
+.ssilka {
+   font-family: "Calibri";
+}
+
+.cann a {
+   text-decoration: none;
+   color: #384354;
+}
+
+.cann a:hover {
+   color: #e98705;
+   transition-duration: 0.2s;
+}
+
+.cann a:active {
+   transform: scale(1.1);
+   -webkit-transform: scale(1.1);
+   -o-transform: scale(1.1);
+   -moz-transform: scale(1.1);
+   -ms-transform: scale(1.1);
+   display: inline-block;
+   transition-duration: 0.2s;
+}
+
+.price {
+   width: 100%;
+   padding-bottom: 100px;
+}
+
+.price p {
+   font-size: 28px;
+   color: #1c2534;
+   font-family: "FranklinGot";
+}
+
+.price p1 {
+   text-transform: uppercase;
+   color: #1c2534;
+   font-size: 20px;
+   font-family: "FranklinGot";
+}
+
+#js-result,
+#js-result1,
+#js-result2,
+#js-result3 {
+   font-size: 14px;
+   color: black;
+   font-weight: 600;
+}
+
+#price,
+#price3,
+#price5,
+#price6 {
+   border: 1px solid #eeeeee;
+   padding: 10px 410px 12px 12px;
+   color: rgb(80, 80, 80);
+   background-color: #eeeeee;
+}
+
+#price2,
+#price4 {
+   border: 1px solid #eeeeee;
+   padding: 10px 385px 12px 12px;
+   color: rgb(80, 80, 80);
+   background-color: #eeeeee;
+}
+.select-css {
+   display: block;
+   font-size: 16px;
+   font-family: sans-serif;
+   font-weight: 700;
+   color: #444;
+   line-height: 1.3;
+   padding: 0.6em 1.4em 0.5em 0.8em;
+   width: 100%;
+   max-width: 100%;
+   box-sizing: border-box;
+   margin: 0;
+   border: 1px solid #aaa;
+   box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
+   border-radius: 0.5em;
+   -moz-appearance: none;
+   -webkit-appearance: none;
+   appearance: none;
+   background-color: #fff;
+   background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E"),
+      linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
+   background-repeat: no-repeat, repeat;
+   background-position: right 0.7em top 50%, 0 0;
+   background-size: 0.65em auto, 100%;
+}
+.select-css::-ms-expand {
+   display: none;
+}
+.select-css:hover {
+   border-color: #888;
+}
+.select-css:focus {
+   border-color: #aaa;
+   box-shadow: 0 0 1px 3px rgba(59, 153, 252, 0.7);
+   box-shadow: 0 0 0 3px -moz-mac-focusring;
+   color: #222;
+   outline: none;
+}
+
+.select-css option {
+   font-weight: normal;
+}
+*[dir="rtl"] .select-css,
+:root:lang(ar) .select-css,
+:root:lang(iw) .select-css {
+   background-position: left 0.7em top 50%, 0 0;
+   padding: 0.6em 0.8em 0.5em 1.4em;
+}
+
+@media (max-width: 1401px) and (max-height: 1200px) {
+   #price,
+   #price3,
+   #price5,
+   #price6 {
+      padding: 10px 300px 12px 12px;
+   }
+}
+@media (max-width: 1401px) and (max-height: 1200px) {
+   #price2,
+   #price4 {
+      padding: 10px 280px 12px 12px;
+   }
+}
+
+@media (max-width: 1201px) and (max-height: 1200px) {
+   #price,
+   #price3,
+   #price5,
+   #price6 {
+      padding: 10px 250px 12px 12px;
+   }
+}
+
+@media (max-width: 1201px) and (max-height: 1200px) {
+   #price2,
+   #price4 {
+      padding: 10px 230px 12px 12px;
+   }
+}
+
+@media (max-width: 993px) and (max-height: 1200px) {
+   #price,
+   #price3,
+   #price5,
+   #price6 {
+      padding: 10px 140px 12px 12px;
+   }
+}
+
+@media (max-width: 993px) and (max-height: 1200px) {
+   #price2,
+   #price4 {
+      padding: 10px 120px 12px 12px;
+   }
+}
+
+.price p3 {
+   font-size: 18px;
+   font-family: "FranklinGot";
+}
+
+.price p2 {
+   font-family: "FranklinGot";
+   font-size: 17px;
+}
+
+.knopka {
+   background-color: #63b5ae;
+   color: white;
+   font-family: "FranklinGot";
+   font-size: 17px;
+   -webkit-transition: All 0.2s ease;
+   -moz-transition: All 0.2s ease;
+   -o-transition: All 0.2s ease;
+   -ms-transition: All 0.2s ease;
+   transition: All 0.2s ease;
+}
+
+.knopka:hover {
+   color: orange;
+   transition-duration: 0.2s;
+}
+
+.knopka:active {
+   transform: scale(1.1);
+   -webkit-transform: scale(1.1);
+   -o-transform: scale(1.1);
+   -moz-transform: scale(1.1);
+   -ms-transform: scale(1.1);
+   transform: all 5s;
+   -webkit-transform: all 5s;
+   -o-transform: all 5s;
+   -ms-transform: all 5s;
+   -moz-transform: all 5s;
+}
+
+.form_submit {
+   border: 2px solid rgb(70, 70, 255);
+   border-radius: 5px;
+   background-color: rgb(70, 70, 255);
+   color: white;
+   padding: 5px 5px;
+}
+
+.form_submit:hover {
+   transition-duration: 0.5s;
+   -webkit-transition-duration: 0.5s;
+   -o-transition-duration: 0.5s;
+   -ms-transition-duration: 0.5s;
+   -moz-transition-duration: 0.5s;
+   background-color: blue;
+}
+
+.form_submit:active {
+   transform: scale(1.1);
+   -webkit-transform: scale(1.1);
+   -o-transform: scale(1.1);
+   -moz-transform: scale(1.1);
+   -ms-transform: scale(1.1);
+}
+
+.form_submit:focus {
+   background-color: blue;
+}
+
+.statistics {
+   width: 100%;
+}
+
+.statistics_container {
+   background: url(../img/fon.jpg) no-repeat 50% 0% / auto 100%;
+   width: 100%;
+   padding-bottom: 100px;
+}
+
+.statistics p {
+   font-size: 27px;
+   text-transform: uppercase;
+   color: #323e4f;
+   font-family: "FranklinGot";
+}
+
+.stat {
+   font-size: 25px;
+   color: #323e4f;
+   font-weight: 600;
+}
+
+.element-animation {
+   opacity: 0;
+}
+.element-animation.show-animation {
+   opacity: 1;
+   transition: opasity 1s;
+   animation: stat1 1.5s ease;
+   -webkit-animation: stat1 1.5s ease;
+   -ms-animation: stat1 1.5s ease;
+   -moz-animation: stat1 1.5s ease;
+   -o-animation: stat1 1.5s ease;
+}
+
+@keyframes stat1 {
+   from {
+      opacity: 0;
+      margin-left: -600px;
+   }
+   to {
+      opacity: 1;
+      margin-left: 0px;
+   }
+}
+
+.static {
+   color: #323e4f;
+   letter-spacing: -1px;
+   text-transform: uppercase;
+   font-family: "Calibri";
+   font-size: 17px;
+}
+
+.staticphone {
+   color: #323e4f;
+   font-weight: 600;
+   font-size: 17px;
+   white-space: nowrap;
+}
+
+.feetback {
+   width: 100%;
+   padding-bottom: 50px;
+   padding-top: 30px;
+}
+
+.feetback p {
+   font-size: 27px;
+   text-transform: uppercase;
+   color: #323e4f;
+   font-family: "FranklinGot";
+}
+.feetback p1 {
+   font-family: "Calibri";
+}
+
+.feetback p2 {
+   font-family: "Calibri";
+}
+
+.contacts {
+   width: 100%;
+   background: url(../img/Фон2.jpg) no-repeat;
+   padding-bottom: 50px;
+}
+
+.contacts p {
+   text-transform: uppercase;
+   font-size: 27px;
+   color: white;
+   font-family: "FranklinGot";
+}
+
+.contacts p4 {
+   color: white;
+   font-family: "Calibri";
+}
+
+.spb a {
+   color: white;
+   font-size: 14px;
+   font-family: "Calibri";
+   text-decoration: none;
+}
+
+.spb a:hover {
+   color: #e98705;
+}
+
+.nomer a {
+   color: white;
+   text-decoration: none;
+}
+
+.nomer a:hover {
+   color: #e98705;
+}
+
+.pochta a {
+   color: white;
+   text-decoration: none;
+}
+
+.pochta a:hover {
+   color: #e98705;
+}
+
+.contacts p5 {
+   color: white;
+   text-transform: uppercase;
+   font-size: 19px;
+   font-family: "FranklinGot";
+}
+
+#inp1 {
+   border: 1px solid black;
+   width: 300px;
+   height: 30px;
+   background-color: rgba(255, 255, 255, 0.1);
+   color: white;
+   padding: 5px 15px;
+}
+
+#inp1:focus {
+   background-color: rgba(255, 255, 255, 0.9);
+   color: black;
+}
+
+.contacts textarea {
+   background-color: rgba(255, 255, 255, 0.1);
+   resize: vertical;
+   color: white;
+   border: 1px solid black;
+   font-size: 15px;
+   padding: 5px 15px;
+   max-height: 210px;
+   min-height: 100px;
+}
+
+.contacts textarea:focus {
+   background-color: rgba(255, 255, 255, 0.9);
+   color: black;
+}
+
+@media (max-width: 770px) and (max-height: 1200px) {
+   .contacts textarea {
+      width: 300px;
+   }
+}
+
+#inp2 {
+   background-color: rgba(255, 255, 255, 0);
+   font-size: 16px;
+   border: 1px solid white;
+   padding: 5px 15px;
+   color: white;
+   font-family: "FranklinGot";
+   border-radius: 4px;
+   -webkit-transition: All 0.2s ease;
+   -moz-transition: All 0.2s ease;
+   -o-transition: All 0.2s ease;
+   -ms-transition: All 0.2s ease;
+   transition: All 0.2s ease;
+}
+
+#inp2:hover {
+   background-color: white;
+   color: #e98705;
+   transition-duration: 0.2s;
+}
+
+#inp2:active {
+   background-color: white;
+   color: #e98705;
+   -webkit-transform: scale(1.1);
+   -o-transform: scale(1.1);
+   -moz-transform: scale(1.1);
+   -ms-transform: scale(1.1);
+   transform: scale(1.1);
+   transition-duration: 0.1s;
+   -webkit-transition-duration: 0.1s;
+   -o-transition-duration: 0.1s;
+   -ms-transition-duration: 0.1s;
+   -moz-transition-duration: 0.1s;
+}
+
+.end {
+   width: 100%;
+   height: 63px;
+   background: #344051;
+}
+
+.end p7 {
+   color: white;
+   letter-spacing: -1px;
+   line-height: 50px;
+}
+
+.slider {
+   /* устанавливаем относительное позиционирование элементу */
+   position: relative;
+   display: block;
+   margin: 0 auto;
+   max-width: 960px;
+}
+
+.slider__items {
+   /* устанавливаем относительное позиционирование элементу */
+   position: relative;
+   /* устанавливаем элементу ширину, равную 100% */
+   width: 100%;
+   overflow: hidden;
+}
+
+.slider__item {
+   /* устанавливаем относительное позиционирование элементу */
+   position: relative;
+   /* отключаем по умолчанию отображение всех слайдов */
+   display: none;
+   /* устанавливаем элементу ширину, равную 100% */
+   width: 100%;
+   /* длительность анимации трансформации */
+   transition: transform 0.6s ease;
+   -webkit-transition: transform 0.6s ease;
+   -o-transition: transform 0.6s ease;
+   -ms-transition: transform 0.6s ease;
+   -moz-transition: transform 0.6s ease;
+
+   /* не показывать обратную сторону трансформируемого элемента */
+   backface-visibility: hidden;
+}
+
+.slider__item_active,
+.slider__item_next,
+.slider__item_prev {
+   /* отображаем слайд, если он имеет один из этих классов */
+   display: block;
+}
+
+.slider__item_next,
+.slider__item_prev {
+   /* устанавливаем абсолютное позиционирование для элемента, на который будет сменяться слайд (на время трансформации) */
+   position: absolute;
+   /* устанавливаем положение элемента, т.е. координату top */
+   top: 0;
+}
+
+.slider__item_next.slider__item_left,
+.slider__item_prev.slider__item_right {
+   /* сдвигаем элемент на 0 по горизонтали */
+   transform: translateX(0);
+}
+
+.slider__item_next,
+.slider__item_right.slider__item_active {
+   /* сдвигаем элемент на 100% по горизонтали */
+   transform: translateX(100%);
+}
+
+.slider__item_prev,
+.slider__item_left.slider__item_active {
+   /* сдвигаем элемент на -100% по горизонтали */
+   transform: translateX(-100%);
+}
+
+.slider__indicators {
+   position: absolute;
+   right: 0;
+   bottom: -70px;
+   left: 0;
+   z-index: 15;
+   display: flex;
+   justify-content: center;
+   padding-left: 0;
+   margin-right: 15%;
+   margin-left: 15%;
+   list-style: none;
+}
+
+.slider__indicator {
+   position: relative;
+   flex: 0 1 auto;
+   width: 10px;
+   height: 10px;
+   margin-right: 5px;
+   margin-left: 5px;
+   text-indent: -999px;
+   cursor: pointer;
+   background-color: rgba(0, 0, 0, 0.5);
+   border-radius: 50%;
+   color: #e98705;
+}
+
+.slider__indicator::before {
+   position: absolute;
+   top: -10px;
+   left: 0;
+   display: inline-block;
+   width: 100%;
+   height: 10px;
+   content: "";
+}
+
+.slider__indicator::after {
+   position: absolute;
+   bottom: -10px;
+   left: 0;
+   display: inline-block;
+   width: 100%;
+   height: 10px;
+   content: "";
+}
+
+.slider__indicator_active {
+   background-color: orange;
+}
+
+.slider__item {
+   height: 320px;
+   overflow: hidden;
+}
+
+.slider__item_inner {
+   position: absolute;
+   left: 15%;
+   right: 15%;
+   top: 36px;
+   bottom: 36px;
+   overflow: hidden;
+   color: #fff;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+@media (min-width: 576px) {
+   .slider__item {
+      height: 250px;
+   }
+   .slider__item_inner {
+      flex-direction: row;
+   }
+   .slider__item_testimonial {
+      margin-left: 15px;
+   }
+   .slider__item_img {
+      flex: 0 0 150px;
+      max-width: 150px;
+   }
+   .slider__item_testimonial {
+      text-align: left;
+   }
+}
+
+.slider__item_name {
+   margin-top: 90px;
+   color: black;
+   display: block;
+}
+
+.slider__item_photo {
+   border-radius: 50%;
+   width: 100px;
+}
+
+.slider__item_post {
+   font-size: 14px;
+   margin-bottom: -50px;
+   color: black;
+   display: block;
+}
+
+.slider__item_text {
+   font-size: 16px;
+   color: black;
+}
+/*Затемнение */
+.overflow {
+   background: rgba(0, 0, 0, 0.7);
+   position: fixed;
+   top: 0px;
+   bottom: 0px;
+   left: 0px;
+   right: 0px;
+   z-index: 100;
+   display: none;
+}
+/* модальное окно */
+.popup {
+   position: fixed;
+   z-index: 101;
+   background: #ffffff;
+   width: 600px;
+   min-height: 200px;
+   margin-left: -300px;
+   top: 10%;
+   left: 50%;
+   display: none;
+   overflow: hidden;
+}
+
+.popup_title {
+   color: #384354;
+   font-size: 24px;
+   text-align: center;
+   padding: 50px 15px 0px 15px;
+}
+.popup .close {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   display: block;
+   width: 17px;
+   height: 17px;
+   opacity: 0.5;
+   background: url(../img/close.png) no-repeat center;
+   -webkit-transition: opacity 0.5s;
+   -moz-transition: opacity 0.5s;
+   transition: opacity 0.5s;
+}
+.popup .close:hover {
+   opacity: 0.8;
+}
+
+@media screen and (max-width: 650px) {
+   .popup {
+      width: auto;
+      margin-left: 0px;
+      top: 40px;
+      left: 10px;
+      right: 10px;
+   }
+}
+
+.close {
+   font-size: 25px;
+   text-decoration: none;
+   color: black;
+}
+
+.close:hover {
+   color: black;
+}
